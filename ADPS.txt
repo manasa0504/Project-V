@@ -1,0 +1,49 @@
+addon-data-pack-system/
+├── backend/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/example/addon/
+│   │   │   │   ├── controller/
+│   │   │   │   ├── service/
+│   │   │   │   ├── model/
+│   │   │   │   ├── repository/
+│   │   │   │   └── config/
+│   │   │   └── resources/
+│   │   │       ├── application.properties
+│   │   │       └── static/
+│   ├── Dockerfile
+│   └── pom.xml
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── App.js
+│   ├── Dockerfile
+│   └── package.json
+├── kafka/
+│   ├── config/
+│   └── consumer/
+├── scheduler/
+│   └── RenewalScheduler.java
+├── database/
+│   ├── schema.sql
+│   └── seed-data.sql
+├── payments/
+│   ├── razorpay/
+│   └── stripe/
+├── tests/
+│   ├── backend/
+│   └── frontend/
+├── deployment/
+│   ├── docker-compose.yml
+│   └── k8s/
+│       ├── frontend-deployment.yaml
+│       ├── backend-deployment.yaml
+│       └── kafka-deployment.yaml
+├── monitoring/
+│   ├── prometheus.yml
+│   └── grafana/
+├── README.md
+└── .env
